@@ -1,0 +1,41 @@
+.contact-us-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fdfdfd;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  margin-left: 200px;
+  margin-top:100px;
+}
+
+.contact-us-container h1 {
+  text-align: center;
+  color: #2e7d32;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-us-container h2 {
+  margin-top: 25px;
+  color: #444;
+  font-size: 1.4rem;
+}
+
+.contact-us-container p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.contact-us-container a {
+  color: #1e88e5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-us-container a:hover {
+  text-decoration: underline;
+  color: #0d47a1;
+}

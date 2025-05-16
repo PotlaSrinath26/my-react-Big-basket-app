@@ -1,0 +1,97 @@
+/* Main container */
+.order-container {
+  padding: 2rem;
+  background-color: #f0f2f5;
+  min-height: 100vh;
+  text-align: center;
+  margin-left: 200px; /* Left margin */
+  margin-top: 100px;
+  margin-right: 200px;
+}
+
+/* Title */
+.order-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+/* Orders layout */
+.order-list-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+/* Card wrapper */
+.order-card {
+  width: 100%;
+  max-width: 350px;
+}
+
+/* Card inner box */
+.order-card-inner {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.order-card-inner:hover {
+  transform: translateY(-5px);
+}
+
+/* Card body */
+.order-card-body {
+  padding: 1.5rem;
+}
+
+/* Order ID */
+.order-id {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+/* Order Date */
+.order-date {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+/* Order Total */
+.order-total {
+  font-size: 1rem;
+  color: #28a745;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+/* Item list */
+.order-item-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid #eee;
+}
+
+/* Item row */
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #eee;
+  font-size: 0.95rem;
+}
+
+.item-name {
+  font-weight: 500;
+}
+
+.item-price {
+  color: #444;
+}

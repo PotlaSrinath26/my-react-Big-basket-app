@@ -1,0 +1,80 @@
+/* Chocolates.css */
+.Chocolates-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #fefefe;
+}
+
+.Chocolates-container h2 {
+  text-align: center;
+  color: #6d4c41;
+  margin-bottom: 20px;
+}
+
+.Chocolates-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+  justify-content: center;
+}
+
+.Chocolates-card {
+  box-sizing: border-box;
+  background-color:white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  width: 200px;
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Chocolates-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.Chocolates-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  
+}
+
+.Chocolates-details {
+  text-align: center;
+}
+
+.Chocolates-details h3 {
+  font-size: 1.1em;
+  margin: 5px 0;
+  color: #4e342e;
+}
+
+.Chocolates-details p {
+  font-size: 1em;
+  color: #5d4037;
+  margin: 5px 0 10px;
+  font-weight: bold;
+}
+
+.add-to-cart-btn {
+  background-color: #8e44ad;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #732d91;
+}

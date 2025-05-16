@@ -1,0 +1,123 @@
+/* Global styles for HomePage */
+.home-container {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  padding: 20px;
+  margin-left: 120px;
+  margin-top:100px;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  border-radius: 10px;
+ background-image: url("https://img.freepik.com/free-vector/nature-scene-rural-land-agriculture-grassland-abtract-silhouette-asian-farmers-working-rice-field-illustration_1150-37317.jpg?semt=ais_hybrid&w=740");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+
+
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero-section h1 span {
+  color:yellow; 
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.shop-button {
+  display: inline-block;
+  background-color: #ffeb3b;
+  color: #333;
+  padding: 10px 30px;
+  font-size: 1.1rem;
+  margin-top: 20px;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.shop-button:hover {
+  background-color: #ff9800;
+}
+
+/* Features Section */
+.features {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.feature-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.feature {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  text-align: center;
+}
+
+.feature h3 {
+  font-size: 1.5rem;
+  color: #4CAF50;
+}
+
+.feature p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* About Call Section */
+.about-call {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.about-call h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.about-call p {
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.about-link {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 30px;
+  font-size: 1rem;
+  margin-top: 20px;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.about-link:hover {
+  background-color: #388e3c;
+}

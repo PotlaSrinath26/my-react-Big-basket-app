@@ -1,0 +1,81 @@
+
+.veg-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-right: 100px;
+  }
+  
+  .veg-container h2 {
+    text-align: center;
+    color: #2e7d32;
+  }
+  
+  .veg-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .veg-card {
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    width: 200px;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .veg-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .veg-image {
+    width: 700px;
+    height: 700px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 8px;
+  }
+  
+  .veg-details {
+    text-align: center;
+  }
+  
+  .veg-details h3 {
+    font-size: 1.1em;
+    margin: 5px 0;
+    color: #333;
+  }
+  
+  .veg-details p {
+    font-size: 1em;
+    color: #555;
+    margin: 5px 0 10px;
+  }
+  
+  .add-to-cart-btn {
+    background-color: #43a047;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #034409;
+  }
+  

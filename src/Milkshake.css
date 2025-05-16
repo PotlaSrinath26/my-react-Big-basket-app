@@ -1,0 +1,94 @@
+/* Container for the entire Milkshake section */
+.Milkshake-container {
+  padding: 2rem;
+  background-color: #f8f8fc;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Section Title */
+.Milkshake-container h2 {
+  text-align: center;
+  color: #333;
+  font-size: 2.2rem;
+  margin-bottom: 2.5rem;
+}
+
+/* Flex container for milkshake cards */
+.Milkshake-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Individual milkshake card */
+.Milkshake-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1 1 260px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hover effect on cards */
+.Milkshake-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Image styling */
+.Milkshake-image {
+  width: 100%;
+  height: 200;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+/* Milkshake description container */
+.Milkshake-details {
+  padding: 1.25rem;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Milkshake name */
+.Milkshake-details h3 {
+  margin: 0.5rem 0;
+  font-size: 1.3rem;
+  color: #222;
+}
+
+/* Milkshake price */
+.Milkshake-details p {
+  font-size: 1rem;
+  color: #666;
+  margin: 0.5rem 0 1.2rem;
+}
+
+/* Add to Cart button */
+.add-to-cart-btn {
+  background-color: #ff6b6b;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover */
+.add-to-cart-btn:hover {
+  background-color: #ff4c4c;
+}

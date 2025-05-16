@@ -1,0 +1,77 @@
+/* NonVeg.css */
+.Nonveg-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.Nonveg-container h2 {
+  text-align: center;
+  color: #2e7d32;
+}
+
+.Nonveg-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+  justify-content: center;
+}
+
+.Nonveg-card {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  width: 200px;
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Nonveg-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.Nonveg-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.Nonveg-details {
+  text-align: center;
+}
+
+.Nonveg-details h3 {
+  font-size: 1.1em;
+  margin: 5px 0;
+  color: #333;
+}
+
+.Nonveg-details p {
+  font-size: 1em;
+  color: #555;
+  margin: 5px 0 10px;
+}
+
+.add-to-cart-btn {
+  background-color: #43a047;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #0d7412;
+}
