@@ -3,8 +3,7 @@ import { configureStore, createSlice } from "@reduxjs/toolkit";
 // Products Slice
 const productsSlice = createSlice({
   name: "products",
-  initialState: {
-    Veg: [
+  initialState: {Veg: [
       { name: "Tomato", price: 68, image: 'tomatoes.jpg' },
       { name: "Carrot", price: 80, image: 'Carrot.jpg' },
       { name: "Beetroot", price: 95, image: 'Beetroot.jpg' },
@@ -92,6 +91,7 @@ const productsSlice = createSlice({
       { name: "Ferrero Rocher", price: 70, image: 'Ferrero Rocher.jpg' },
       { name: "Mist Dark", price: 30, image: 'Mist Dark.jpg' }
     ]
+   
   },
   reducers: {}
 });
@@ -139,13 +139,42 @@ const orderSlice = createSlice({
   }
 });
 
-// Configure Store
+// Auth Slice
+const storedUser = localStorage.getItem("authUser");
+const initialAuth = storedUser
+  ? { isAuthenticated: true, user: JSON.parse(storedUser) }
+  : { isAuthenticated: false, user: null };
+
+const authSlice = createSlice({
+  name: "auth",
+  initialState: initialAuth,
+  reducers: {
+    signUp: (state, action) => {
+      state.isAuthenticated = true;
+      state.user = action.payload;
+      localStorage.setItem("authUser", JSON.stringify(action.payload));
+    },
+    signIn: (state, action) => {
+      state.isAuthenticated = true;
+      state.user = action.payload;
+      localStorage.setItem("authUser", JSON.stringify(action.payload));
+    },
+    signOut: (state) => {
+      state.isAuthenticated = false;
+      state.user = null;
+      localStorage.removeItem("authUser");
+    },
+  },
+});
+
+// Configure Store (Only ONCE!)
 const store = configureStore({
   reducer: {
     products: productsSlice.reducer,
     cart: cartSlice.reducer,
     orders: orderSlice.reducer,
-  }
+    auth: authSlice.reducer,
+  },
 });
 
 // Save cart to localStorage on every state change
@@ -157,5 +186,6 @@ store.subscribe(() => {
 // Exports
 export const { AddToCart, RemoveCart, incrementItem, decrementItem, clearCart } = cartSlice.actions;
 export const { orderDetails } = orderSlice.actions;
+export const { signUp, signIn, signOut } = authSlice.actions;
 
 export default store;

@@ -10,7 +10,7 @@ import Chocolates from './Chocolates';
 import Order from './Order';
 import Cart from './Cart';
 import AboutUs from './AboutUs';
-import Login from './Login';
+import Singin from './Singin';
 import ContactUs from './ContactUs';
 
 
@@ -42,13 +42,14 @@ function App() {
         <Link to="/Order">&#128230; Orders</Link>
         <Link to="/Cart">  &#128722;{cartCount > 0 && <span className="cart-badge">({cartCount})</span>} </Link>
         <Link to="/AboutUs">&#128100; About Us</Link>
-        <Link to="/Login">&#128273; Login</Link>
+        <Link to="/Signin">&#128273; Signin</Link>
         <Link to="/ContactUs">ContactUs</Link>
    
 
       </nav>
 
       <Routes>
+         <Route path='/' element={<Home />} />
         <Route path='/Home' element={<Home />} />
         <Route path='/Veg' element={<Veg />} />
         <Route path='/NonVeg' element={<NonVeg />} />
@@ -57,7 +58,7 @@ function App() {
         <Route path='/Order' element={<Order />} />
         <Route path='/Cart' element={<Cart />} />
         <Route path='/AboutUs' element={<AboutUs />} />
-        <Route path='/Login' element={<Login />} />
+       <Route path='/Signin' element={<Singin />} />
         <Route path='/ContactUs' element={<ContactUs />} />
       </Routes>
     </BrowserRouter>

@@ -11,6 +11,7 @@ function ContactUs() {
       </p>
 
       <h2>📧 Email</h2>
+      <p><b>NAME:</b>POTLA.SRINATH</p>
       <p>
         <a href="mailto:support@villagemart.com">support@villagemart.com</a>
       </p>

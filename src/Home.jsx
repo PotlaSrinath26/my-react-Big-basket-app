@@ -7,7 +7,12 @@ function HomePage() {
   return (
     <div className="home-container">
       <header className="hero-section">
-        <h1>Welcome to <span>Village Mart</span> 🛒</h1>
+  
+   <h1> Welcome to <span>Village Mart</span> 🛒
+
+ 
+</h1>
+
         <p>Your one-stop shop for fresh vegetables, groceries & more — straight from local <b>farmers </b>to your doorstep!</p>
         <Link to="/shop" className="shop-button">Start Shopping</Link>
       </header>
